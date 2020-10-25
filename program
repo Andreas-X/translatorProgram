@@ -1,0 +1,298 @@
+Note: There are 15 words which can be translated from either english, french or spanish to any of the other. If you find any bugs, please let me know.
+InputFormat: the word to tanslate "apple"
+             the language to translate it to "french"        
+Note: A word can be entered in either french or spanish and be translated to another language.            
+
+
+
+import java.util.Scanner;
+public class Main {
+
+	@SuppressWarnings({ })
+	public static void main(String[] args) {
+		@SuppressWarnings("resource")
+		
+		Scanner word = new Scanner(System.in);		
+		String answer = word.nextLine();
+		String convertee = word.nextLine();
+		
+		
+		//The arrays are listed here below. I prefer keeping all variables together. Save time for looking for one to edit.
+		
+		String [ ] apple = {"Apple", "Pomme", "Manzana"};
+		String [ ] drink = {"Soda", "Un Soda", "Bebida"};
+		String [ ] store = {"Supermarket", "Supermarché", "Supermercado"};
+		String [ ] entertainment = {"Entertainment" , "Divertissement" , "Entretenimiento"};
+		String [ ] food = {"Food" , "Crossant" , "Paella"};
+		String [ ] car = {"Automobile" , "Voiture" , "Coche"};
+		String [ ] machines = {"Plane" , "Train" , "Entrenar"};
+		String [ ] occupation = {"Occupation", "Occupation" , "Ocupación"};
+		String [ ] mathematics = {"Mathematics" , "Mathématiques" , "Matemáticas"};
+		String [ ] earth = {"Earth" , "Terre" , "Tierra"};
+		String [ ] house = {"Mansion" , "Manoir" , "Mansión"};
+		String [ ] paint = {"Paint" , "Peindre" , "Pintar"};
+		String [ ] gold = {"Gold", "Or" , "Oro"};
+		String [ ] wolf = {"Wolf" , "Loup" , "Lobo"};
+		String [ ] steal = {"Steal" , "Voler" , "Robar"};
+		
+		
+		//Nested switch statements in a switch statement.
+
+	
+		switch(answer) {
+		case "fruit":
+			switch(convertee) {
+			   case "english":
+				   System.out.println(fruit[0] + ". This is english for apple and can be used as an adjective or noun in a sentence. ");
+				   break;
+			   case "french":
+				   System.out.println(fruit[1] + ". Ceci est français pour pomme et peut être utilisé comme adjectif ou nom dans une phrase. ");
+				   break;
+			   case "spanish":
+				   System.out.print(fruit[2] + ". Esto es en español para manzana y se puede usar como adjetivo o sustantivo en una oración. ");
+				   break;
+			   default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+			
+		//Confusing. I know. :/
+			
+		case "drink":
+			switch(convertee) {
+			case "english":
+				System.out.println(drink[0] + ". This word can be used as a noun in a sentence.");
+				break;
+			case "french":
+				System.out.println(drink[1] + ". Ce mot peut être utilisé comme nom dans une phrase.");
+				break;
+		    case "spanish":
+		    	System.out.println(drink[2] + ". Esta palabra se puede usar como sustantivo en una oración.");
+		    	break;
+		    default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+			
+		
+		//All this blocky code is the best way because it makes it easy to read and easy to find bugs.
+			
+		case "store":
+			switch(convertee) {
+				case "english":
+					System.out.println(store[0] + ". It is the place where goods are bought.");
+					break;
+				case "french":
+					System.out.println(store[1] +  ". C'est l'endroit où les marchandises sont achetées.");
+					break;
+				case "spanish":
+					System.out.println(store[2] + ". Es el lugar donde se compran los bienes.");
+					break;
+				default:
+					   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "entertainment":
+			switch(convertee) {
+			case "english":
+				   System.out.println(entertainment[0] + ". It is a platform for TV show entertainment.");
+				   break;
+			case "french":
+				System.out.println(entertainment[1] + ". C'est une plate-forme pour le divertissement des émissions de télévision.");
+				break;
+			case "spanish":
+				System.out.println(entertainment[2] + ". Es una plataforma para el entretenimiento de programas de televisión.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "food":
+			switch(convertee) {
+				case "english":
+					System.out.println(food[0] + ". It is a substance we take in to give ourselves nutrients.");
+					break;
+				case "french":
+					System.out.println(food[1] + ". C'est une substance que nous absorbons pour nous donner des nutriments.");
+					break;
+				case "spanish":
+					System.out.println(food[2] + ". Es una sustancia que ingerimos para darnos nutrientes.");
+					break;
+				default:
+					   System.out.println("No such word in the Program");
+			}
+		break;
+			
+			
+		case "car":
+			switch(convertee) {
+			case "english":
+				System.out.println(car[0] + ". It is a machine used to move around.");			
+				break;
+			case "french":
+				System.out.println(car[1] + ". C'est une machine utilisée pour se déplacer.");
+				break;
+			case "spanish":
+				System.out.println(car[2] + ". Es una maquina que se usa para moverse.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+			
+		//I have encountered a good amount of bugs just making this program.
+		
+		case "machines":
+			switch(convertee) {
+			case "english":
+				System.out.println(machines[0]  + ". It is an automobile machine used to move from place to place.");
+				break;
+			case "french":
+				System.out.println(machines[1] + ". Il est utilisé pour se déplacer d'un endroit à l'autre.");
+				break;
+			case "spanish":
+				System.out.println(machines[2] + ". Se usa para moverse de un lugar a otro.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "occupation":
+			switch(convertee) {
+			case"english":
+				System.out.println(occupation[0] + ". It is a Profession.");
+				break;
+			case "french":
+				System.out.println(occupation[1] + ". C'est une profession.");
+				break;
+			case "spanish":
+				System.out.println(occupation[2] + ". Es una profesión.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "mathematics":
+			switch(convertee) {
+			case "english":
+				System.out.println(mathematics[0] + ". It is the science of numbers.");
+				break;
+			case "french":
+				System.out.println(mathematics[1] + ". C'est la science des nombres.");
+				break;
+			case "spanish":
+				System.out.println(mathematics[2] + ". Es la ciencia de los números.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "earth":
+			switch(convertee) {
+			case "english":
+				System.out.println(earth[0] + ". It is a planet in the solar system.");
+				break;
+			case "french":
+				System.out.println(earth[1]  + ". C'est une planète dans le système solaire.");
+				break;
+			case "spanish":
+				System.out.println(earth[2] + ". Es un planeta del sistema solar.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+			
+		case "house":
+			switch(convertee) {
+			case "english":
+				System.out.println(house[0] + ". It is a building people live in.");
+				break;
+			case "french":
+				System.out.println(house[1] + ". C'est un bâtiment dans lequel les gens vivent.");
+				break;
+			case "spanish":
+				System.out.println(house[2] + ". Es un edificio en el que vive la gente.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+			
+		case "paint":
+			switch(convertee) {
+			case "english":
+				System.out.println(paint[0] + ". It is a pigmented liquid.");
+				break;
+			case "french":
+				System.out.println(paint[1] + ". C'est un liquide pigmenté.");
+				break;
+			case "spanish":
+				System.out.println(paint[2] + ". Es un liquido pigmentado.");
+				break;
+			default:
+				   System.out.println("No such word in the Program");
+			}
+		break;
+		
+		case "gold":
+			switch(convertee) {
+			case "english":
+				System.out.println(gold[0] + "It is an element");
+				break;
+			case "french":
+				System.out.println(gold[1] + ". C'est un élément");
+				break;
+			case "spanish":
+				System.out.println(gold[2] + ". Es un elemento");
+				break;
+			}
+		break;
+		
+		case "wolf":
+			switch(convertee) {
+			case "english":
+				System.out.println(wolf[0] + ". It is noble animal");
+				break;
+			case "french":
+				System.out.println(wolf[1] + ". C'est un animal noble");
+				break;
+			case "spanish":
+				System.out.println(wolf[2] + ". Es un animal noble");
+				break;
+			}
+		break;
+		
+		case "steal":
+			switch(convertee) {
+			case "english":
+				System.out.println(steal[0] + ". It is a bad thing to do");
+				break;
+			case "french":
+				System.out.println(steal[1] + ". C'est une mauvaise chose à faire");
+				break;
+			case "spanish":
+				System.out.println(steal[2] + ". Es una mala cosa hacer");
+				break;
+			}
+		break;
+		
+		default:
+			System.out.println("I have never seen such a word in my Program.");
+		}
+		
+	
+	//I have finished the code finally! 
+	}
+}
